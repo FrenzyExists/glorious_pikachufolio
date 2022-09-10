@@ -1,0 +1,2 @@
+# glorious_pikachufolio
+LET'S FUCKING GOOOOOOOOOOOOOOOOOOOOOOOO
