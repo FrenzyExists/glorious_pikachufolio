@@ -1,6 +1,8 @@
 # pikafolio
 
-This template should help get you started developing with Vue 3 in Vite.
+Personal portfolio made with Vue 3 Vue Router, tailwind, Vue Bootstrap Icons and a bunch of other stuff.
+
+Currently in development
 
 ## Recommended IDE Setup
 
