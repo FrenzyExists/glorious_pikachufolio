@@ -1,6 +1,11 @@
-<script setup>
-import AboutMe from '../components/AboutMe.vue';
-import AboutContact from '../components/AboutContact.vue';
+<script>
+  import {defineAsyncComponent} from "vue";
+  export default {
+    components: {
+      AboutMe: defineAsyncComponent( () => import('../components/AboutMe.vue')),
+      AboutContact: defineAsyncComponent( () => import('../components/AboutContact.vue'))
+    }
+  }
 </script>
 
 <template>
