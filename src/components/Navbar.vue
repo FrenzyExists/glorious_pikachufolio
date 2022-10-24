@@ -1,4 +1,5 @@
 <script setup>
+import {defineAsyncComponent} from "vue";
 import { RouterLink } from 'vue-router'
 import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/vue'
 import router, { routeArray } from '../router';
@@ -13,16 +14,16 @@ import router, { routeArray } from '../router';
             <!-- Mobile menu button-->
             <DisclosureButton class="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
               <span class="sr-only">Open main menu</span>
-              
+
               <BIconList />
             </DisclosureButton>
           </div>
           <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-            
+
             <div class="hidden sm:ml-6 sm:flex ">
               <div class="flex flex-shrink-0 items-center">
                 <span class="text-yellow text-4xl mr-3">
-                    <BIconLightningChargeFill class="block h-8 w-auto text-yellow-200"/>
+                    <font-awesome-icon icon="fa-solid fa-bolt" class="block h-8 w-auto text-yellow-200"/>
                 </span>
                 <h1 class="text-2xl mr-3 text-gray-100 pr-12">Garcia's</h1>
             </div>
@@ -40,7 +41,7 @@ import router, { routeArray } from '../router';
           </div>
         </div>
       </div>
-  
+
       <DisclosurePanel class="sm:hidden">
         <div class="space-y-1 px-2 pt-2 pb-3">
           <DisclosureButton v-for="item in routeArray" :key="item.name" as="a" :href="item.href" :class="[item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white', 'block px-3 py-2 rounded-md text-base font-medium']" :aria-current="item.current ? 'page' : undefined">{{ item.name }}</DisclosureButton>

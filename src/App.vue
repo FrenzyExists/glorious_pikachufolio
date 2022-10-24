@@ -1,17 +1,15 @@
 <script setup>
-import { RouterView } from 'vue-router';
-import Navbar from './components/Navbar.vue';
-import Footer from './components/Footer.vue';
-
+	import { RouterView } from 'vue-router';
+	import Navbar from './components/Navbar.vue';
+	import Footer from './components/Footer.vue';
 </script>
 
 <template>
   <div>
     <header>
-      <bi bi-icon-lightning-charge-fill/>
-      <Navbar />
+        <Navbar/>
     </header>
     <RouterView />
-    <Footer />  
+    <Footer />
   </div>
 </template>
