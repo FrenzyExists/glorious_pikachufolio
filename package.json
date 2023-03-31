@@ -16,7 +16,7 @@
     "bootstrap-icons-vue": "^1.8.1",
     "vue": "^3.2.38",
     "vue-router": "^4.1.5",
-    "vue3-carousel": "^0.2.4"
+    "vue3-carousel": "^0.2.14"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^3.0.3",
